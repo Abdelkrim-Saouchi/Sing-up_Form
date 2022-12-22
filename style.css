@@ -98,6 +98,7 @@ main {
 
 .intro .desc {
     max-width: 500px;
+    border
 }
 
 .intro .motivation {
@@ -133,10 +134,21 @@ form h2 {
     margin-bottom: 16px;
 }
 
+input[type="password"]:invalid {
+    border-color: red;
+}
+
+.input-div span {
+    color: red;
+    font-size: 12px;
+    visibility:hidden;
+}
+
 button {
     margin-left: var(--element-spacing);
     background-color: #596D48;
     color: var(--white);
+    cursor: pointer;
     padding: 12px 42px;
     border-radius: 6px;
     outline: 0;
@@ -181,4 +193,5 @@ input:focus {
 .login a:is(:hover, :focus) {
     color: var(--saturated-light-green);
 }
+
 
