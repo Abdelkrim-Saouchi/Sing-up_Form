@@ -12,14 +12,21 @@
         <div class="left-side">
             <div class="logo-container">
                 <img src="images/odin-lined.png" alt="odin logo">
+                <h1>ODIN</h1>
             </div>
-            <p>Photo by Halie West on Unsplash</p>
+            <p class="credit">Photo by 
+                <a href="https://unsplash.com/fr/@haliewestphoto">Halie West</a> 
+                on <a href="https://unsplash.com/fr">Unsplash</a>
+            </p>
         </div>
         <div class="right-side">
-            <p class="desc">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up Now to get started.</p>
-            <p class="motivation">You know you want to.</p>
-            <form action="" class="sing-up-form">
-                <h1>let's do this!</h1>
+            <div class="intro">
+                <p class="desc">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p class="singup">Sign up Now to get started.</p>
+                <p class="motivation">You know you want to.</p>
+            </div>
+            <form action="#" class="sing-up-form">
+                <h2>let's do this!</h2>
                 <div class="info-container">
                     <div class="form-inputs">
                         <div class="form-left">
@@ -33,7 +40,7 @@
                             </div>
                             <div class="input-div">
                                 <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="user_password">
+                                <input type="password" id="password" name="user_password" class="error">
                             </div>
                         </div>
                         <div class="form-right">
@@ -46,15 +53,15 @@
                                 <input type="tel" id="phone_number" name="user_phone_number">
                             </div>
                             <div class="input-div">
-                                <label for="password_confirm">LAST NAME</label>
-                                <input type="text" id="password_confirm" name="password_confirm">
+                                <label for="password_confirm">CONFIRM PASSWORD</label>
+                                <input type="text" id="password_confirm" name="password_confirm" class="error">
                             </div>
                         </div>
                     </div>
                     <button type="submit">Create Account</button>
                 </div>
             </form>
-            <p class="login">Already have an account? Log in</p>
+            <p class="login">Already have an account? <a href="#">Log in</a></p>
         </div>
     </main>
 </body>

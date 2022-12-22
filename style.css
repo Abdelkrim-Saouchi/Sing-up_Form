@@ -1,0 +1,184 @@
+/* general settings */
+
+@font-face {
+    font-family: logo-font;
+    src: url("fonts/Norse-Bold.otf");
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --grey-white: rgb(249 250 251);
+    --light-green: #596D48;
+    --saturated-light-green: hsl(92, 60%, 35%);
+    --blue-dark: rgb(31 41 55);
+    --lighter-grey: #E5E7EB;
+    --blue: rgba(0, 0, 255, 0.808);
+    --shadow-color: rgba(0, 0, 0, 0.171);
+    --element-spacing: 32px;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+}
+
+/* left side */
+
+.left-side {
+    flex: 1;
+    flex-basis: 38%;
+    background-image: url("images/halie-west-25xggax4bSA-unsplash\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}  
+
+.right-side {
+    flex: 1;
+    flex-basis: 62%;
+    background-color: var(--grey-white);
+}
+
+.logo-container {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 var(--element-spacing);
+    position: relative;
+    top: 125px;
+}
+
+.logo-container img {
+    max-width: 100%;
+    max-height: 80%;
+}
+
+.logo-container h1 {
+    color: var(--white);
+    font-size: 74px;
+    font-family: logo-font;
+}
+
+.credit {
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+.credit a {
+    color: var(--white);
+}
+
+.credit a:is(:hover, :focus) {
+    opacity: 0.5;
+}
+
+/*right side */
+
+.intro {
+    padding-top: 150px;
+    padding-left: var(--element-spacing);
+    padding-bottom: 16px;
+    background-color: var(--grey-white);
+    font-weight: 600;
+}
+
+.intro .desc {
+    max-width: 500px;
+}
+
+.intro .motivation {
+    margin-top: 24px;
+}
+
+/* form */
+.sing-up-form {
+    padding: 16px 0px;
+}
+
+form h2 {
+    color: var(--dark-grey);
+    padding-left: var(--element-spacing);
+    padding-bottom: 16px;
+    padding-top: 16px;
+    background-color: var(--white);
+}
+
+.form-inputs {
+    display: flex;
+    gap: 64px;
+    box-shadow: 0px 8px 8px -2px var(--shadow-color);
+    padding: 0 32px;
+    padding-bottom: 18px;
+    margin-bottom: var(--element-spacing);
+    background-color: var(--white);
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+button {
+    margin-left: var(--element-spacing);
+    background-color: #596D48;
+    color: var(--white);
+    padding: 12px 42px;
+    border-radius: 6px;
+    outline: 0;
+    border: 0;
+    font-weight: 700;
+}
+
+button:is(:hover, :focus) {
+    background-color:var(--saturated-light-green);
+}
+
+.login {
+    padding-left: var(--element-spacing);
+    margin-bottom: 16px;
+}
+
+form label {
+    font-size:x-small;
+    font-weight: 500;
+    color: var(--dark-grey);
+    letter-spacing: 2px;
+}
+
+form input {
+    height: 30px;
+    border: 1px solid var(--lighter-grey);
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: 0;
+    border: 1px solid var(--blue);
+    box-shadow: 2px 8px 8px -6px var(--shadow-color);
+}
+
+.login a {
+    text-decoration: none;
+    color: var(--light-green);
+}
+
+.login a:is(:hover, :focus) {
+    color: var(--saturated-light-green);
+}
+
